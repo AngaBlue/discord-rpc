@@ -2,7 +2,7 @@
   "name": "discord-rpc",
   "version": "1.0.0",
   "description": "Dicord Rich Presence Application",
-  "main": "src/index.mjs",
+  "main": "src/index.js",
   "type": "module",
   "dependencies": {
     "dayjs": "^1.10.5",
@@ -12,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.mjs"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
