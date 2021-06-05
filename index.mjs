@@ -15,7 +15,7 @@ client.on("ready", () => {
         activity: {
             details: "🔵 Online",
             assets: {
-                large_image: "angablue",
+                large_image: "logo-1080",
                 large_text: "AngaBlue",
             },
             buttons: [
