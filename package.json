@@ -1,0 +1,31 @@
+{
+  "name": "discord-rpc",
+  "version": "1.0.0",
+  "description": "Dicord Rich Presence Application",
+  "main": "index.mjs",
+  "dependencies": {
+    "discord-rpc": "^3.2.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngaBlue/discord-rpc.git"
+  },
+  "keywords": [
+    "discord",
+    "discord-rpc",
+    "discord-rpc-with-buttons",
+    "rich-presence"
+  ],
+  "author": "AngaBlue",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AngaBlue/discord-rpc/issues"
+  },
+  "homepage": "https://github.com/AngaBlue/discord-rpc#readme"
+}
