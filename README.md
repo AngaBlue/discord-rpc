@@ -3,7 +3,7 @@
 
 Create an interactive rich presence application on Discord to show extra information and buttons on your profile.
 
-![Rich Presence Image Preview](https://i.anga.blue/sL1n.png)
+![Rich Presence Image Preview](https://i.anga.blue/ANGF.png)
 
 Developed by [AngaBlue](https://anga.blue)
 
