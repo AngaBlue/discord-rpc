@@ -19,7 +19,7 @@ export default function setActivity(client) {
         pid: process.pid,
         activity: {
             details: "🔵 Online",
-            state: `${clock} ${hour}:${minute < 10 ? "0" : ""}${minute} ${date.getHours() >= 12 ? "pm" : "am"} ${Intl.DateTimeFormat().resolvedOptions().timeZone}`,
+            state: `${clock} ${hour}:${minute < 10 ? "0" : ""}${minute} ${date.getHours() >= 12 ? "pm" : "am"} ${Intl.DateTimeFormat().resolvedOptions().timeZone.replace(/_/g, " ")}`,
             assets: {
                 large_image: "logo-1080",
                 large_text: "AngaBlue",
