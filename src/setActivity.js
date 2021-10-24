@@ -1,4 +1,4 @@
-const base = 0xDD50;
+const base = 0xdd50;
 
 export default function setActivity(client) {
     const date = new Date();
@@ -14,20 +14,21 @@ export default function setActivity(client) {
         index = (hour + Math.round(minute / 60) - 1) % 12;
     }
     const clock = `\uD83D${String.fromCharCode(base + index)}`;
+    const city = Intl.DateTimeFormat().resolvedOptions().timeZone.replace(/_/g, ' ');
 
-    client.request("SET_ACTIVITY", {
+    client.request('SET_ACTIVITY', {
         pid: process.pid,
         activity: {
-            details: "🔵 Online",
-            state: `${clock} ${hour}:${minute < 10 ? "0" : ""}${minute} ${date.getHours() >= 12 ? "pm" : "am"} ${Intl.DateTimeFormat().resolvedOptions().timeZone.replace(/_/g, " ")}`,
+            details: '🔵 Online',
+            state: `${clock} ${hour}:${minute < 10 ? '0' : ''}${minute} ${date.getHours() >= 12 ? 'pm' : 'am'} ${city}`,
             assets: {
-                large_image: "logo-1080",
-                large_text: "AngaBlue",
+                large_image: 'logo-1080',
+                large_text: 'AngaBlue'
             },
             buttons: [
-                { label: "🌐 Website", url: "https://anga.blue" },
-                { label: "👾 Free Rocket League Items", url: "https://anga.blue/rlsupply" },
-            ],
-        },
+                { label: '🌐 Website', url: 'https://anga.blue' },
+                { label: '👾 Free Rocket League Items', url: 'https://anga.blue/rlsupply' }
+            ]
+        }
     });
 }

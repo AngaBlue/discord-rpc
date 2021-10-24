@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "Dicord Rich Presence Application",
   "main": "src/index.js",
-  "type": "module",
   "dependencies": {
     "dayjs": "^1.10.5",
     "discord-rpc": "^3.2.0",
     "dotenv": "^10.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@angablue/eslint-config": "^1.0.2",
+    "eslint": "^8.1.0",
+    "prettier": "^2.4.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "lint": "eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",

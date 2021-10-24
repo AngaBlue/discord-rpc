@@ -1,18 +1,17 @@
-/* eslint-disable import/extensions */
-import { config } from "dotenv";
-import { Client } from "discord-rpc";
-import setActivity from "./setActivity.js";
+import { config } from 'dotenv';
+import { Client } from 'discord-rpc';
+import setActivity from './setActivity';
 
 config();
 
 const client = new Client({
-    transport: "ipc",
+    transport: 'ipc'
 });
 
 let interval;
 
-client.on("ready", () => {
-    console.log("Started Rich Presence Application");
+client.on('ready', () => {
+    console.log('Started Rich Presence Application');
     if (interval) clearInterval();
     setActivity(client);
     // Update status every minute
@@ -21,5 +20,5 @@ client.on("ready", () => {
 
 client.login({
     clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
+    clientSecret: process.env.CLIENT_SECRET
 });
