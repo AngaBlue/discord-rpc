@@ -1,15 +1,15 @@
 {
   "name": "discord-rpc",
   "version": "1.0.0",
-  "description": "Dicord Rich Presence Application",
+  "description": "Create an interactive rich presence application on Discord to show extra information and buttons on your profile.",
   "main": "src/index.js",
   "dependencies": {
     "dayjs": "^1.10.5",
-    "discord-rpc": "^3.2.0",
+    "discord-rpc": "^4.0.1",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "@angablue/eslint-config": "^1.0.2",
+    "@angablue/eslint-config": "^1.0.5",
     "eslint": "^8.1.0",
     "prettier": "^2.4.1"
   },
@@ -28,7 +28,7 @@
     "discord-rpc-with-buttons",
     "rich-presence"
   ],
-  "author": "AngaBlue",
+  "author": "AngaBlue <contact@anga.blue>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/AngaBlue/discord-rpc/issues"
