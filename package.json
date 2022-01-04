@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Create an interactive rich presence application on Discord to show extra information and buttons on your profile.",
   "main": "src/index.js",
+  "type": "module",
   "dependencies": {
-    "dayjs": "^1.10.5",
+    "dayjs": "^1.10.7",
     "discord-rpc": "^4.0.1",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "@angablue/eslint-config": "^1.0.5",
-    "eslint": "^8.1.0",
-    "prettier": "^2.4.1"
+    "@angablue/eslint-config": "^1.1.2",
+    "eslint": "^8.6.0",
+    "prettier": "^2.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

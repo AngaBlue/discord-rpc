@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import { Client } from 'discord-rpc';
-import setActivity from './setActivity';
+import setActivity from './setActivity.js';
 
 config();
 
