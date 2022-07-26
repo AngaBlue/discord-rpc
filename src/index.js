@@ -15,7 +15,7 @@ client.on('ready', () => {
     if (interval) clearInterval();
     setActivity(client);
     // Update status every minute
-    interval = setInterval(() => setActivity(client), 60000);
+    interval = setInterval(() => setActivity(client), 60_000);
 });
 
 client.login({
