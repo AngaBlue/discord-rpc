@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@angablue/eslint-config': ^1.4.1
+  '@angablue/eslint-config': ^1.4.3
   dayjs: ^1.11.6
   discord-rpc: ^4.0.1
   dotenv: ^16.0.3
@@ -14,14 +14,14 @@ dependencies:
   dotenv: 16.0.3
 
 devDependencies:
-  '@angablue/eslint-config': 1.4.1_5qrnzwqb344w6up62gv3safeoi
+  '@angablue/eslint-config': 1.4.3_5qrnzwqb344w6up62gv3safeoi
   eslint: 8.28.0
   prettier: 2.8.0
 
 packages:
 
-  /@angablue/eslint-config/1.4.1_5qrnzwqb344w6up62gv3safeoi:
-    resolution: {integrity: sha512-q2+WWlhBvzyDeyS2sLQ+CmoDva8CAG7I1S92RuoBZrm2XVTRQntZALgmj8ej24CyPUnDkHIYIhp6k/FynfFVOA==}
+  /@angablue/eslint-config/1.4.3_5qrnzwqb344w6up62gv3safeoi:
+    resolution: {integrity: sha512-DV9r9klMhc9186428XvWv/U7DCn2DMMfotE41FHBAku+GZiYCwi92IuaV2JJGbWgh20iI599dw56uq1su+SHhg==}
     peerDependencies:
       eslint: '>=8.12.0'
       prettier: '>=2.6.2'
