@@ -16,11 +16,7 @@ Create an interactive rich presence application on Discord to show extra informa
 Clone or download this repository and install dependices using your package manager of choice.
 
 ```sh
- npm i
-```
-or
-```sh
- yarn
+npm i
 ```
 
 ## Usage
