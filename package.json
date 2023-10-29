@@ -5,14 +5,14 @@
   "main": "src/index.js",
   "type": "module",
   "dependencies": {
-    "dayjs": "^1.11.6",
+    "dayjs": "^1.11.10",
     "discord-rpc": "^4.0.1",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@angablue/eslint-config": "^1.4.3",
-    "eslint": "^8.28.0",
-    "prettier": "^2.8.0"
+    "eslint": "^8.52.0",
+    "prettier": "^2.8.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
