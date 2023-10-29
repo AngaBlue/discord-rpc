@@ -34,7 +34,7 @@ export default function setActivity(client) {
         },
         buttons: [
             { label: '🌐 Website', url: 'https://anga.blue' },
-            { label: '👾 Free Rocket League Items', url: 'https://rl.supply/ref/anga' }
+            { label: '🚗 Instant Rocket League Trading', url: 'https://op.market/ref/anga' }
         ]
     });
 }

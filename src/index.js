@@ -16,13 +16,19 @@ client.on('ready', () => {
     console.log('Started Rich Presence Application');
 
     // Clear the interval if it already exists
-    if (interval) clearInterval();
+    if (interval) clearInterval(interval);
 
-    // Set the initial activity
-    setActivity(client);
+    const now = new Date();
+    const msUntilNextMinute = (60 - now.getSeconds()) * 1000 - now.getMilliseconds();
 
-    // Update status every minute
-    interval = setInterval(() => setActivity(client), 60_000);
+    // Wait until the start of the next minute to begin the interval
+    setTimeout(() => {
+        // Set the initial activity
+        setActivity(client);
+
+        // Update status every minute
+        interval = setInterval(() => setActivity(client), 60_000);
+    }, msUntilNextMinute);
 });
 
 client.login({
