@@ -10,9 +10,9 @@
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
-    "@angablue/eslint-config": "^1.4.3",
-    "eslint": "^8.52.0",
-    "prettier": "^2.8.8"
+    "@angablue/eslint-config": "^1.4.4",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
