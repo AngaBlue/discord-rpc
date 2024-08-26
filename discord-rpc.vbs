@@ -1,1 +1,1 @@
-CreateObject("Wscript.Shell").Run "npm run start", 0
+CreateObject("Wscript.Shell").Run "pwsh -NoExit -Command ""npm run start""", 0
