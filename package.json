@@ -1,6 +1,6 @@
 {
 	"name": "discord-rpc",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Create an interactive rich presence application on Discord to show extra information and buttons on your profile.",
 	"main": "src/index.js",
 	"type": "module",
@@ -17,7 +17,12 @@
 		"type": "git",
 		"url": "git+https://github.com/AngaBlue/discord-rpc.git"
 	},
-	"keywords": ["discord", "discord-rpc", "discord-rpc-with-buttons", "rich-presence"],
+	"keywords": [
+		"discord",
+		"discord-rpc",
+		"discord-rpc-with-buttons",
+		"rich-presence"
+	],
 	"author": {
 		"name": "AngaBlue",
 		"email": "contact@anga.blue",
@@ -29,7 +34,10 @@
 	},
 	"homepage": "https://github.com/AngaBlue/discord-rpc#readme",
 	"pnpm": {
-		"onlyBuiltDependencies": ["@biomejs/biome", "register-scheme"]
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"register-scheme"
+		]
 	},
 	"devDependencies": {
 		"@angablue/biome-config": "^1.0.5",
