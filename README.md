@@ -1,8 +1,8 @@
 <h1 align="center">Discord Rich Presence 💬</h1>
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000?label=Version" />
+  <img alt="Version" src="https://img.shields.io/github/v/tag/AngaBlue/discord-rpc?label=Version" />
   <a href="https://github.com/AngaBlue/discord-rpc/blob/master/LICENSE" target="_blank">
-    <img alt="License: LGPL--3.0--or--later" src="https://img.shields.io/github/license/AngaBlue/discord-rpc?color=green" />
+    <img alt="Licence: MIT" src="https://img.shields.io/github/license/AngaBlue/discord-rpc?color=green&label=Licence" />
   </a>
 </p>
 
@@ -13,7 +13,7 @@ Create an interactive rich presence application on Discord to show extra informa
 ![Rich Presence Image Preview](https://i.anga.blue/QrX8.png)
 
 ## Install
-Clone or download this repository and install dependices using your package manager of choice.
+Clone or download this repository and install dependencies using your package manager of choice.
 
 ```sh
 npm i
@@ -46,4 +46,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [AngaBlue <contact@anga.blue>](https://github.com/AngaBlue).<br />
-This project is [LGPL--3.0--or--later](https://github.com/AngaBlue/discord-rpc/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/AngaBlue/discord-rpc/blob/master/LICENSE) licensed.
