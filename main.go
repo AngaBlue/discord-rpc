@@ -19,14 +19,18 @@ func main() {
 	if err != nil {
 		panic("Failed to load .env")
 	}
+	applicationID := os.Getenv(EnvApplicationID)
+	if applicationID == "" {
+		panic("APPLICATION_ID is not set")
+	}
 
 	// Initialise client and activity base
-	client := drpc.New(os.Getenv(EnvApplicationID))
+	client := drpc.New(applicationID)
 	activity := &drpc.Activity{
 		Details: "🔵 Online",
 		Assets: &drpc.Assets{
 			LargeText:  "AngaBlue",
-			LargeImage: "logo-180",
+			LargeImage: "logo-1080",
 		},
 		Buttons: []drpc.Button{{
 			Label: "🌐 Website",
@@ -57,7 +61,7 @@ func setActivity(client *drpc.Client, activity *drpc.Activity, t time.Time) {
 	builder.WriteString(t.Format("3:04 pm"))
 	builder.WriteByte(' ')
 	zone, _ := t.Zone()
-	builder.WriteString(strings.Replace(zone, "_", " ", -1))
+	builder.WriteString(strings.ReplaceAll(zone, "_", " "))
 
 	// Update state and set activity
 	activity.State = builder.String()
@@ -68,18 +72,21 @@ func setActivity(client *drpc.Client, activity *drpc.Activity, t time.Time) {
 }
 
 func getClockEmoji(t time.Time) rune {
-	var index int
 	minute := t.Minute()
 	hour := t.Hour()
-	if minute > 15 && minute < 45 {
+
+	var index int
+	switch {
+	case minute >= 15 && minute < 45:
 		// Clock on the half hour
 		index = 12 + ((hour + 11) % 12)
-	} else {
+	case minute >= 45:
+		// Clock on the next hour
+		index = ((hour+1)%24 + 11) % 12
+	default:
 		// Clock on the hour
-		index = (hour + (minute / 60) - 1 + 12) % 12
+		index = (hour + 11) % 12
 	}
 
-	const baseRune = 0x1F550
-
-	return rune(baseRune + index)
+	return rune(0x1F550 + index)
 }
